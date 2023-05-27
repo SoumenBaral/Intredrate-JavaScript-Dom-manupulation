@@ -1,0 +1,40 @@
+.header{
+    text-align: center;
+}
+.don{
+    color: darkorange;
+}
+#van_text{
+    color: purple;
+    font-weight: 600;
+
+}
+button{
+    background-color: gray;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 20px;
+}
+button:hover{
+    color: white;
+    font-weight: 600;
+}
+.division{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.b-blue{
+    color: blue;
+}
+#cub{
+    margin-left: 200px;
+}
+#textField{
+    margin-top: 20px;
+}
+#delete{
+    margin-top: 20px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>Explore More Events</h1>
+    <button id="moreEvents">Events</button>
+    <input type="text" name="name" id="input">
+    <script>
+        document.getElementById('moreEvents').addEventListener('mouseenter',function(){
+            console.log("clicked");
+        })
+        // ============>some More Event<============\\
+        // 1. click
+        // 2. mouseenter
+        // 3. mousemove
+        // 4.mouseout
+
+
+        //-------------->input Event<<---------------\\
+        // 1.focus 
+        document.getElementById('input').addEventListener('focus',function(){
+            console.log("we can red this man");
+        })
+        // 2.blur 
+        document.getElementById('input').addEventListener('blur',function(){
+            console.log("we can red this man");
+        })
+        //3.keydown
+
+        document.getElementById('input').addEventListener('keydown',function(){
+            // console.log(event.target.value);
+        })
+        //keyup
+        document.getElementById('input').addEventListener('keyup',function(){
+            console.log(event.target.value);
+        })
+
+
+    </script>
+</body>
+</html>

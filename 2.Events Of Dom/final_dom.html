@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final Dom</title>
+</head>
+<body>
+     <!-- option--1 -->
+    <h1 id="change">Now we ar using this new DOM</h1>
+    <div id="add_P">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam!</p>
+        <p>Sunt nulla ad aliquid harum, quas dicta? Sint, maxime deleniti.</p>
+        <p>Qui reiciendis dicta sit dolorum hic, ab facere illo animi!</p>
+        <p id="para">Click the value of to read the full paragraph</p>
+    </div><br>
+    <textarea name="" id="Comment" cols="30" rows="10"></textarea><br>
+    <button id="submit_comment">Comment Hare</button>
+
+    <h2 id="setValue">Default Text Man</h2>
+    <input id="takeInput" type="text">
+    <br>
+    <button id="submit">Submit</button><br>
+    <br>
+
+    <button onclick="HandleClick()">Click the button to change the sentence </button>
+    <br>
+    <button id="paragraph">change the value of paragraph </button>
+     <!-- option--2 final option  -->
+    <script>
+        function HandleClick(){
+            document.getElementById('change').innerText= "We just change the value of Dom just clicking the button";
+        }
+
+        //2222222222222222
+
+        document.getElementById("paragraph").addEventListener('click',function(){
+            document.getElementById("para").innerText=' Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti iste doloribus laborum rem eos provident deleniti sint. Sint pariatur quibusdam aut sunt mollitia? Facere quidem illo officiis atque eius.';
+        })
+
+        //Doing the same thing in another way;
+        document.getElementById("submit").addEventListener('click',function(){
+            const getInput = document.getElementById("takeInput");
+            // console.log(getInput);
+            document.getElementById("setValue").innerText= getInput.value;
+            getInput.value='';
+        })
+        // append some chid element by using event Handler ..
+    
+        // addEventListener added done step -1 done 
+        document.getElementById("submit_comment").addEventListener('click',function(){
+            // step 2 is get the comment done..
+            const GetComment = document.getElementById("Comment");
+            //step 3 get the parent for added the child inside ..
+            const getParent = document.getElementById("add_P");
+            //step 4 Create the child for adding element 
+            //----->set the value of P that we got from text area
+            // ----> add the P into the div by using the keyWord appendChild
+
+            const createP = document.createElement("p")
+            createP.innerText = GetComment.value;
+            getParent.appendChild(createP);
+            GetComment.value= '';
+        })
+
+    </script>
+</body>
+</html>

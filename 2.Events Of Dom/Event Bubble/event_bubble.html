@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+    <style>
+        body{
+            border: 2px solid gold;
+        }
+        section{
+            border: 2px solid red;
+        }
+        ul{
+            border: 2px solid green;
+        }
+        ul :nth-child(2){
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>I am from Mohakhai And It's the area of bubble vau</h1>
+    <section id="list-container">
+        <ul id="list_ul">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Laboriosam, sapiente.</li>
+            <li id="item-3">Repellendus, aperiam!</li>
+            <li id="item-4">Doloremque, dolores.</li>
+            <li id="item-5">Libero, commodi!</li>
+            <li id="item-6">Dignissimos, eos?</li>
+        </ul>
+    </section>
+<script src="bubble.js"></script>
+</body>
+</html>
