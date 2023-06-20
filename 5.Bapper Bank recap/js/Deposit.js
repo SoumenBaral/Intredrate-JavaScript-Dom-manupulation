@@ -30,7 +30,7 @@
 // })
 //------------------little bit easy----------------------->
 
-
+// Dry ........................>> Don't repeat Yourself;
  
 document.getElementById("Deposit-btn").addEventListener("click",function(){
     const DepositInput =InputFieldTotal("newDeposit");

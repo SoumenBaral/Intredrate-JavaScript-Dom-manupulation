@@ -15,13 +15,15 @@
     background-color: #dcdbe1;
     border: solid black 0.5px;
     color: black;
-    border-radius: 5px;
+    border-radius: 5px;s
     width: 100%;
     height: 65%;
 }
 
 #btn {
     background-color: #fb0066;
+    border: solid black 0.5px;
+    border-radius: 5px;
 }
 
 input[type=button] {

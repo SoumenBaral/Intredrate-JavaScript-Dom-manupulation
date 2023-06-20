@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="calculator">
+        <tr>
+            <td colspan="3"><input class="display_box" type="text" id="display_Box" disabled></td>
+            <td><input type="button" value="Clear" onclick="clear()" id="btn"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="fun('1')" value="1"></td>
+            <td><input type="button" onclick="fun('2')" value="2"></td>
+            <td><input type="button" onclick="fun('3')" value="3"></td>
+            <td><input type="button" onclick="fun('/')" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="fun('4')"  value="4"></td>
+            <td><input type="button" onclick="fun('5')" value="5"></td>
+            <td><input type="button" onclick="fun('6')" value="6"></td>
+            <td><input type="button" onclick="fun('-')" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="fun('7')" value="7"></td>
+            <td><input type="button" onclick="fun('8')" value="8"></td>
+            <td><input type="button" onclick="fun('9')" value="9"></td>
+            <td><input type="button" onclick="fun('+')" value="+"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="fun('.')" value="."></td>
+            <td><input type="button" onclick="fun('0')" value="0"></td>
+            <td><input type="button" id="col" onclick="result()" value="="></td>
+            <td><input type="button" onclick="fun('*')" value="*"></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>

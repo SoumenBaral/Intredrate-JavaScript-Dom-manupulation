@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount with coupon code </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+</head>
+<body>
+    <div class="w-[200px] h-[300px] mx-auto mt-[100px]">
+    <h1 class=" text-3xl ">prise $<span class="text-orange-600 " id="original_price">1200</span></h1>
+    <input type="text" name="" class="border-red-400 border my-2" id="input-field">
+    <input type="button" value="Discount 30%" onclick="getDiscount()" disabled id="btn" class="btn px-4 py-2 border rounded bg-blue-600 text-white">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
