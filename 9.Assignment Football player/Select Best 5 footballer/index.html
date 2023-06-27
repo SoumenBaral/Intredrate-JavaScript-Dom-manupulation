@@ -118,19 +118,19 @@
                     <h1 class="text-2xl text-center italic mt-6"> Budget</h1>
                     <hr class="border-t-2 border-gray-500 my-4 ms-16 h-1 w-1/2 bg-orange-500">
                     <label class="text-xl text-gray-400 mx-2">Per Player </label>
-                    <input type="text" class="border inline w-1/2 h-8 bg-black border-slate-300">
-                    <button class="btn text-center bg-blue-500 px-20 py-1 my-6 ms-5">Calculate</button>
-                    <h2 class="text-xl text-gray-400 ms-2 mb-5">Player Expenses: $<span>00</span></h2>
+                    <input id="PlayerCost" type="text" class="border inline w-1/2 h-8 bg-black border-slate-300">
+                    <button id="PlayerExpenses" class="btn text-center bg-blue-500 px-20 py-1 my-6 ms-5">Calculate</button>
+                    <h2 class="text-xl text-gray-400 ms-2 mb-5">Player Expenses: $<span id="PlayerPrice">00</span></h2>
                    <div class="my-3">
                         <label class="text-xl text-gray-400 mx-2 ">Manager </label>
-                        <input type="text" class="border inline w-1/2 h-8 bg-black border-slate-300">
+                        <input id="Manager" type="text" class="border inline w-1/2 h-8 bg-black border-slate-300">
                    </div>
                     <label class="text-xl text-gray-400 mx-2 mr-8">Coach </label>
-                    <input type="text" class="border inline w-1/2 h-8 bg-black border-slate-300">
-                    <button class="btn text-center bg-blue-500 px-16 py-1 my-6 ms-5">Calculate Total</button>
+                    <input id="Coach" type="text" class="border inline w-1/2 h-8 bg-black border-slate-300">
+                    <button id="totalExp" class="btn text-center bg-blue-500 px-16 py-1 my-6 ms-5">Calculate Total</button>
                     <div class="flex justify-between items-center mx-4">
                         <h1 class="text-xl text-gray-400">Total</h1>
-                        <h2 class="text-orange-500 text-xl">$00</h2>
+                        <h2 class="text-orange-500 text-xl">$<span id="TotalEXP">00</span></h2>
                     </div>
                 </div> 
             </div>
