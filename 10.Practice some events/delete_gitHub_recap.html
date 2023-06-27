@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="secret">My secret Information </h1>
+    <input type="text" name="" id="input" placeholder="Please Type delete">
+    <button id="delete" >Git Delete </button>
+    <script>
+        document.getElementById('input').addEventListener('keyup',function(){
+            const text = event.target.value;
+            const btn = document.getElementById('delete'); 
+            if (text=='delete') {
+                btn.setAttribute('disabled',true);
+               
+            }
+            else{
+                btn.removeAttribute('disabled',true);
+            }
+        })
+
+        document.getElementById('delete').addEventListener('click',function(){
+            document.getElementById("secret").style.display='none';
+           
+            
+        })
+    </script>
+</body>
+</html>
